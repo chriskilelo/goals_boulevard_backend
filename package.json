@@ -1,0 +1,27 @@
+{
+  "name": "goals_boulevard_backend",
+  "version": "1.0.0",
+  "description": "the back end application for the Goals Boulevard system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriskilelo/goals_boulevard_backend.git"
+  },
+  "keywords": [
+    "goals",
+    "goals-boulevard",
+    "goals-application",
+    "goals-management",
+    "targets-management"
+  ],
+  "author": "Chris Kilelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chriskilelo/goals_boulevard_backend/issues"
+  },
+  "homepage": "https://github.com/chriskilelo/goals_boulevard_backend#readme"
+}
