@@ -9,7 +9,7 @@
  * @route   GET /api_v1.0/goals
  * @access  Private
  */
-const getGoals = (req, res) => {
+const getGoals = async (req, res) => {
     res.status(200).json({ message: 'Get all goals' })
 }
 
@@ -19,7 +19,7 @@ const getGoals = (req, res) => {
  * @route   POST /api_v1.0/goals
  * @access  Private
  */
-const setGoal = (req, res) => {
+const setGoal = async (req, res) => {
     // Check whether there is any text that has been passed in
     if (!req.body.text) {
         // Means NO text found, issue a 400 bad request error
@@ -37,7 +37,7 @@ const setGoal = (req, res) => {
  * @route   PUT /api_v1.0/goals/:id
  * @access  Private
  */
-const updateGoal = (req, res) => {
+const updateGoal = async (req, res) => {
     res.status(200).json({ message: 'Update a goal with ID: ' + req.params.id })
 }
 
@@ -47,7 +47,7 @@ const updateGoal = (req, res) => {
  * @route   DELETE /api_v1.0/goals/:id
  * @access  Private
  */
-const deleteGoal = (req, res) => {
+const deleteGoal = async (req, res) => {
     res.status(200).json({ message: 'Delete a goal with ID: ' + req.params.id })
 }
 
